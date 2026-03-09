@@ -4,7 +4,7 @@
 A from-scratch implementation of the **Qwen3** large language model in pure PyTorch — no Hugging Face `transformers` dependency required for model inference. Built for learning and experimentation.
 
 <p align="center">
-  <img src="images/qnwe3.png" />
+  <img src="images/qwen3.png" />
 </p>
 
 ###  Features
