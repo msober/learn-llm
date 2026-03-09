@@ -1,0 +1,11 @@
+# for model runtime
+torch>=2.2.2,<2.6; sys_platform == 'darwin' and platform_machine == 'x86_64'  # Intel macOS
+torch >= 2.2.2; sys_platform != 'darwin' or platform_machine != 'x86_64'  
+tokenizers
+numpy >= 1.26, < 2
+safetensors
+# for modelscope
+modelscope
+setuptools==81.0.0
+packaging
+                                                        
