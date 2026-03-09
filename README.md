@@ -55,17 +55,7 @@ python inference/qwen3_infer.py
 
 The script will automatically download the **Qwen3-0.6B** weights from ModelScope on the first run, then prompt you for input and stream the generated response.
 
-###  Sampling Parameters
-
-The default sampling configuration mirrors the official Qwen3-0.6B `generation_config.json`:
-
-| Parameter     | Default | Description                                      |
-|---------------|---------|--------------------------------------------------|
-| `temperature` | 0.6     | Controls randomness (0 = greedy, higher = more random) |
-| `top_k`       | 20      | Keeps only the top-k most likely tokens          |
-| `top_p`       | 0.95    | Nucleus sampling probability threshold           |
-
-### 🏗️ Model Architecture
+### Model Parameters
 
 | Component                    | Detail                              |
 |------------------------------|-------------------------------------|
@@ -80,12 +70,17 @@ The default sampling configuration mirrors the official Qwen3-0.6B `generation_c
 | **Context length**           | 40,960                              |
 | **Precision**                | bfloat16                            |
 
-###  Dependencies
 
-- `torch` ≥ 2.2.2
-- `tokenizers`
-- `numpy` ≥ 1.26
-- `safetensors`
-- `modelscope`
+###  Sampling Parameters
+
+The default sampling configuration mirrors the official Qwen3-0.6B `generation_config.json`:
+
+| Parameter     | Default | Description                                      |
+|---------------|---------|--------------------------------------------------|
+| `temperature` | 0.6     | Controls randomness (0 = greedy, higher = more random) |
+| `top_k`       | 20      | Keeps only the top-k most likely tokens          |
+| `top_p`       | 0.95    | Nucleus sampling probability threshold           |
+
+###  Dependencies
 
 See `requirements.txt` for full details.
